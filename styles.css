@@ -6,6 +6,19 @@
     box-sizing: border-box;
     font-family: Bai Jamjuree;
     font-weight: 400;
+    font-size: 1rem;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #f0dcca;
+    height: 100vh;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.2rem;
 }
 
 .container {
@@ -15,14 +28,37 @@
 }
 
 .regisForm {
-    border: solid;
     border-radius: 30px;
     padding: 50px;
+    background-color: #fff4e7;
 }
 
 div {
     margin-top: 8px;
     margin-bottom: 8px;
+}
+
+span {
+    color: red;
+}
+
+input, select {
+    border: 1px solid black;
+    border-radius: 9px;
+}
+
+select, #male, #female, #others, #yes, #no {
+    cursor: pointer;
+}
+
+.student_gender input {
+    margin-top: 9px;
+    margin-left: 5px;
+}
+
+.news_selector input {
+    margin-top: 9px;
+    margin-left: 5px;
 }
 
 .submit_button {
@@ -34,5 +70,9 @@ div {
     button {
         width: 200px;
         height: 30px;
+        border: hidden;
+        border-radius: 15px;
+        background-color: rgb(255, 222, 150);
+        cursor: pointer;
     }
 }
