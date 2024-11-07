@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Membership</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Sign up</h1>
+        </div>
+
+        <form class="regisForm">
+            <!-- ชื่อไทย start-->
+            <div class="thai_name">
+                <div class="firstname_thai">
+                    <label for="fn_thai">ชื่อจริง<span class="required">*</span></label>
+                    <br>
+                    <input type="text" id="fn_thai" required>
+                </div>
+
+                <div class="lastname_thai">
+                    <label for="ln_thai">นามสกุล<span class="required">*</span></label>
+                    <br>
+                    <input type="text" id="ln_thai" required>
+                </div>
+            </div>
+            <!-- ชื่อไทย end-->
+
+            <!-- ชื่อEng start-->
+            <div class="eng_name">
+                <div class="firstname_eng">
+                    <label for="fn_eng">Firstname<span class="required">*</span></label>
+                    <br>
+                    <input type="text" id="fn_eng" required>
+                </div>
+
+                <div class="lastname_eng">
+                    <label for="ln_eng">Lastname<span class="required">*</span></label>
+                    <br>
+                    <input type="text" id="ln_eng" required>
+                </div>
+            </div>
+            <!-- ชื่อEng end-->
+
+            <!-- รหัสนักศึกษา start-->
+            <div class="student_id">
+                <label for="std_id">รหัสนักศึกษา<span class="required">*</span></label>
+                <br>
+                <input type="number" id="std_id" required>
+            </div>
+            <!-- รหัสนักศึกษา end-->
+
+            <!-- Email start-->
+            <div class="student_email">
+                <label for="email">ที่อยู่อีเมล (E-mail address)<span class="required">*</span></label>
+                <br>
+                <input type="email" id="email" required>
+            </div>
+            <!-- Email end-->
+
+            <!-- Faculty start-->
+            <div class="student_faculty">
+                <label for="faculty">คณะที่ศึกษา<span class="required">*</span></label>
+                <br>
+                <select name="faculty" id="faculty" required>
+                    <option value="" disabled selected>-- เลือกคณะที่ศึกษา --</option>
+                    <option value="faculty_of_law">คณะนิติศาสตร์</option>
+                    <option value="faculty_of_commerce_and_accountancy">คณะพาณิชยศาสตร์และการบัญชี</option>
+                    <option value="faculty_of_political_science">คณะรัฐศาสตร์</option>
+                    <option value="faculty_of_economics">คณะเศรษฐศาสตร์</option>
+                    <option value="faculty_of_social_administration">คณะสังคมสงเคราะห์ศาสตร์</option>
+                    <option value="faculty_of_liberal_arts">คณะศิลปศาสตร์</option>
+                    <option value="faculty_of_journalism_and_mass_communication">คณะวารสารศาสตร์และสื่อสารมวลชน</option>
+                    <option value="college_of_innovation">วิทยาลัยนวัตกรรม</option>
+                    <option value="college_of_interdisciplinary_studies">วิทยาลัยสหวิทยาการ</option>
+                    <option value="pridi_banomyong_international_college">วิทยาลัยนานาชาติปรีดีพนมยงค์</option>
+                    <option value="faculty_of_sociology_and_anthropology">คณะสังคมวิทยาและมานุษยวิทยา</option>
+                    <option value="faculty_of_science_and_technology">คณะวิทยาศาสตร์และเทคโนโลยี</option>
+                    <option value="faculty_of_engineering">คณะวิศวกรรมศาสตร์</option>
+                    <option value="faculty_of_medicine">คณะแพทยศาสตร์</option>
+                    <option value="faculty_of_allied_health_sciences">คณะสหเวชศาสตร์</option>
+                    <option value="faculty_of_dentistry">คณะทันตแพทยศาสตร์</option>
+                    <option value="faculty_of_nursing">คณะพยาบาลศาสตร์</option>
+                    <option value="faculty_of_fine_and_applied_arts">คณะศิลปกรรมศาสตร์</option>
+                    <option value="faculty_of_architecture_and_planning">คณะสถาปัตยกรรมศาสตร์และการผังเมือง</option>
+                    <option value="faculty_of_public_health">คณะสาธารณสุขศาสตร์</option>
+                    <option value="faculty_of_pharmacy">คณะเภสัชศาสตร์</option>
+                    <option value="faculty_of_learning_sciences_and_education">คณะวิทยาการเรียนรู้และศึกษาศาสตร์</option>
+                    <option value="sirindhorn_international_institute_of_technology">สถาบันเทคโนโลยีนานาชาติสิรินธร</option>
+                    <option value="college_of_world_studies">วิทยาลัยโลกคดีศึกษา</option>
+                    <option value="chulabhorn_international_college_of_medicine">วิทยาลัยแพทยศาสตร์นานาชาติจุฬาภรณ์</option>
+                    <option value="puay_ungphakorn_school_of_development_studies">วิทยาลัยพัฒนศาสตร์ป๋วยอึ๊งภากรณ์</option>
+                </select>
+            </div>
+            <!-- Faculty end-->
+
+            <!-- Birthdate start-->
+             <div class="student_birthdate">
+                <label for="birthdate">วันเดือนปีเกิด<span class="required">*</span></label>
+                <br>
+                <input type="date" id="birthdate" required>
+             </div>
+            <!-- Birthdate end-->
+
+            <!-- Gender start-->
+             <div class="student_gender">
+                <label>เพศ</label>
+                <br>
+                <input type="radio" name="gender" value="male"> ชาย
+                <input type="radio" name="gender" value="female"> หญิง
+                <input type="radio" name="gender" value="others"> อื่นๆ
+             </div>
+            <!-- Gender end-->
+
+            <!-- Books start-->
+             <div class="book_intered">
+                <label for="books">ประเภทของหนังสือที่สนใจ</label>
+                <br>
+                <select name="books" id="books">
+                    <option disabled selected>-- เลือกประเภทของหนังสือ --</option>
+                    <option value="fiction_book">Fiction</option>
+                    <option value="mystery_thriller_book">Mystery/Thriller</option>
+                    <option value="fantasy_book">Fantasy</option>
+                    <option value="science_fiction_book">Science Fiction</option>
+                    <option value="romance_book">Romance</option>
+                    <option value="non_fiction_book">Non-Fiction</option>
+                    <option value="young_adult_book">Young Adult (YA)</option>
+                    <option value="graphic_novels_and_comics_book">Graphic Novels and Comics</option>
+                    <option value="others">อื่นๆ</option>
+                </select>
+             </div>
+            <!-- Books end-->
+
+            <!-- News start-->
+             <div class="news_selector">
+                <label>ความต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่</label>
+                <br>
+                <input type="radio" name="selector" id="yes"> ต้องการ
+                <input type="radio" name="selector" id="no"> ไม่ต้องการ
+             </div>
+            <!-- News end-->
+
+            <!-- Submitbutton start-->
+            <div class="submit_button">
+                <button class="submit">Submit</button>
+            </div>
+            <!-- Submitbutton start-->
+            
+        </form>
+    </div>
+</body>
+</html>
